@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/txtico.png">
+    <link rel="icon" href="txtico.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Login</title>
+    
     <?php
     session_start();
     ?>
@@ -33,13 +34,13 @@
                     <button class="button is-success">Login</button>
             </form>
 
-            <div class="links">
-                <a href="./paginas/indexNovaSenha.php"><p>Esqueci minha senha</p></a>
-                <a href="./paginas/indexCadastroUser.php"><p>Cadastrar</p></a>
+            <div>
+                <a class="links" href="./paginas/indexNovaSenha.php"><p>Esqueci minha senha</p></a>
+                <a class="links" href="./paginas/indexCadastroUser.php"><p>Cadastrar</p></a>
             </div>           
         </div>
 
-        <?php                                     
+        <?php                                 
 		    if(isset($_SESSION['loginErro'])){
                 echo $_SESSION['loginErro'];
                 unset($_SESSION['loginErro']);
